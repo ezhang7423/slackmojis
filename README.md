@@ -10,4 +10,4 @@ git clone
 ```
 ## dependencies:
 
-chrome. we'll take care of everything else.
+chrome and python. we'll take care of everything else.
