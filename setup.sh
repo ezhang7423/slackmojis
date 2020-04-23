@@ -4,19 +4,19 @@ import os
 
 
 def prompt(query):
-    y = input(query)
+    y = input(query + '\n')
     while y != 'y' and y != 'n':
         print("That's not a valid option.")
-        y = input(query)
+        y = input(query + '\n')
     return y
 
 y = prompt("Have you set credentials yet? (y/n)")
 if y == 'n':
-    ss = input("What's the url of your slack site?")
-    email = input("What's your email?")
-    password = input("What's your password? This information stays only on your computer.")
+    ss = input("What's the url of your slack site? e.g. https://shouandeddie.slack.com/\n")
+    email = input("What's your email?\n")
+    password = input("What's your password? This information stays only on your computer.\n")
     with open('uploader/.env', 'w') as fout:
-        fout.write(f"SLACKSITE={ss}\n")
+        fout.write(f"SLACKSITE={ss}customize/emoji\n")
         fout.write(f"EMAIL={email}\n")
         fout.write(f"PASSWORDD={password}\n")
 
