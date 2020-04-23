@@ -6,7 +6,7 @@ mass upload custom emojis to your slack workspace (order of thousands)
 
 ```
 git clone
-run setup.sh
+./setup.sh
 ```
 ## dependencies:
 
