@@ -1,6 +1,12 @@
 # slackmojis
 
-installation:
-clone
-run setup.sh to mass upload custom emojis to your slack workspace (order of thousands)
+mass upload custom emojis to your slack workspace (order of thousands)
 
+## installation:
+
+git clone
+run setup.sh
+
+## dependencies:
+
+chrome. we'll take care of everything else.
