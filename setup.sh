@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
-# from scraper import * shous stuff
+from scraper.api import *
 
 
 def prompt(query):
@@ -25,12 +25,13 @@ if y == 'n':
 os.system('python3 -mwebbrowser https://slackmojis.com/')
 y = prompt("Would you like to download off of the main page?")  
 if y == 'y':
-    y = prompt("Which header would you like to download from?")
-    # call shous super cool api
+    f = input("Which header would you like to download from? e.g. 'Star Wars'\n")
+    getHeader(f.encode('utf-8'))
     # if gifs is not empty, move all files into new folder gifbak
 else: 
-    y = prompt("which category would you like to download from?")
+    f = input("which category would you like to download from? e.g. 'https://slackmojis.com/emojis/popular' or 'https://slackmojis.com/categories/17-hangouts-blob-emojis'\n")
     # call shous amazing api
+    getCategory(f.encode('utf-8'))
 
 
 ## all data should be downloaded into gifs folder at this point
